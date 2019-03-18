@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>BBDor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <style>
+        #container{
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        html, .btn:not(:disabled):not(.disabled) {
+            cursor: url('data:image/gif;base64,R0lGODlhIAAcAOfyAAYGBoqGgv7GUo42Ds6GOoZiOsbGwtqqdkZGRtZaGqqmnurm4uqKNmZmYqaGduqeQv7mWopyXtY+BtbW0k4mEs6qgsp6MpqWkv62OopKKnpKMvr27v72YiIiHrq2snp2cq52OuqKWvKWZuLa1paKdrZeMtLKxlZWUvLu5nZycuZ6Qv7STtKWbv6mMuZaFrKupqqagq4uAv6GJm5uav6WKnoyDv62VqpKFv7+bvauUhoaFv7qgop2auZKCp6emjIyLqZ2Wubi3mJeXvZ2Kv6OKv6eLpKOhsqKappaOsZmJv7uXt7a1mZiYv7++paSjtbSzvry7v6uOgoKBv7GgqY2Cs7OyrKqpvLq5m5qaraKVv7masZWGlZCNv6+Qp5OGv7+ZjIiDsK+tv6KRv6WSqZmNl5aWvby7v7agrqyrr6ifvqWOv6CHtZmJo6Kht6SPs7KxlpKQq6qpu7q5mpqZv7qVp5yPspGBtrWzsbCvs56Up6alm5WSv769oJ+er6COuLe1rpCDupqJvpWDoaCfq5+ZnI6Ft6iWqpWKsI2Ap5iLuqiUrqGav5qHqainnZiTpZ+bn5SPtp2Kpo+EtqOZqZqRmJCHl4mCoo+IppmSioqKv7Obp6SfjoqFtpuNrpyLrJyTk5OSv56NtaOUvq2biYWDtZKDraOduqSTv7aVrZWHpJGGn5uYu52MpZyUv7OSnY+Kv6mRvKuZjo2NppSKoZiTv6KNq5mKv52IvqKVv7WWrayrv66ZsZmNv6WWt6iar66tn56dlpaVnJybv6aLv66Pv76XtLOxv6SJv6yNv7CPv6qMv6KJv7+emJiXv6iLmpmZlpWVnJubqKeluri3pqSjgoGBsrGwv6WMtrSzv7qXsrCvqqinqqmovr28vLu6rKuqv7+cubi4pKOit7a2v7+/paSkgoKCv7+asK+uvby8o6Kiu7q6trW0p6amuLe2tLOyv6SKqKemv///////////////////////////////////////////////////////yH5BAEIAP8ALAAAAAAgABwAAAj+AP8JHEiwoMGDCBMqXFjwV5g37sa9sVKNoUJQ4+SwM8fRXLV32wBYNGggHJ83HTlKCYdnWwMHIwWG8WaSXLeU5vi8+9UuBQllJCyaW9eNnNEN5rptQPHOHR5ufY7QwBBloZR3ZvgYtUmOz9I/eJZ8E1dmmLJJLRRKcZd1K4quG+T82WklwJxjRWDBGoSwmrkg3rppHbzB2wJ21tBIAQDgxLlh4GAerCblyQIzG8xMM2MGxQJ3T/BQZNyghYBzyWhMrmLG2rQ/Vji64+OO3Rs8eqoxjsbhCzhnOIYZbBRmwgZuOLHZ9hDnBGMAss6BO6eMyAGDg3QZeDdHSkopui7+YLMW53npc1/OoVp2q6C6Rh7wvJNCn361aW88cHPSh/EJV84kcw4HrlRVUACNoGFNNZRJoVsYcTRyQRuDBDADBzQw40oL55wjQx4FCdGGHtw8x2AY3EhzgTgBAANMWcm4kgwGwwwTRSQFAdOAix6EgQdj8VDjhBEB9NFAA8QoI8MyLbSQVwKBAFPQD7IUGYA4TlwwSBsUAhNNNLgoswINXdCAiwoWRMLGIQbpcEI0wPQxyJYuRmMOAMAgM8wYaQkEzA1bpNLHQbKA0sAMwqQQzXMAqKEMQsCQkYoXCYFSBgLOPccQD0iQEdNIqqTC5qcMYZIBD6RatIojqS4kZasFsMZ6UEAAOw=='), auto !important;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            display: block;
+            position: relative;
+        }
+
+        html::after {
+        content: "";
+        background: url('http://www.misterbabyfoot.com/media/wysiwyg/images-blog/baby-foot-luxe.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+        }
+    </style>
+    <script>
+        //?participants=[{"name":"Participant 1"},{"name":"Participant 2"},{"name":"Participant 3"},{"name":"Participant 4"},{"name":"Participant 5"},{"name":"Participant 6"}]
+
+        var players = [];
+        //Wait load
+        document.addEventListener("DOMContentLoaded", function (event) {
+            init();
+        });
+
+        function init() {
+            initParticipants();
+            changeHtmlContentOfElemenentId();
+        }
+
+        function changeHtmlContentOfElemenentId() {
+            var htmlElements = JSON.parse(unescapeStr(getUrlVars()["html-elements"]));
+            htmlElements.forEach(function (elementInfos) {
+                var element = document.getElementById(elementInfos["id"]);
+                if (element) {
+                    element.innerHTML = elementInfos["innerHTML"];
+                }
+            });
+        }
+
+        function initParticipants() {
+            var participants = JSON.parse(unescapeStr(getUrlVars()["participants"]));
+            var participantListElement = document.getElementById("participant-list");
+            participantListElement.innerHTML = "";
+            participants.forEach(function (element) {
+                console.log(element["name"]);
+                participantListElement.innerHTML += '<button type="button" class="btn btn-secondary btn-md btn-block col-4 align-self-start" onclick="changeParticipantStatus(this)">' + element["name"] + '</button>'
+            });
+        }
+
+        function changeParticipantStatus(participant) {
+            if (participant.classList.contains("btn-secondary")) {
+                participant.classList.add("btn-primary");
+                participant.classList.remove("btn-secondary");
+                players.push(participant);
+            }
+            else {
+                participant.classList.add("btn-secondary");
+                participant.classList.remove("btn-primary");
+                removeElement(players, participant);
+            }
+
+            var buttonBabyDoooor = document.getElementById("submit-button");
+
+            if (players.length == 4) {
+                buttonBabyDoooor.classList.add("btn-success");
+                buttonBabyDoooor.classList.remove("btn-secondary");
+            } else {
+                buttonBabyDoooor.classList.add("btn-secondary");
+                buttonBabyDoooor.classList.remove("btn-success");
+            }
+
+
+            console.log(players.length);
+        }
+
+        function removeElement(array, element) {
+            const index = array.indexOf(element);
+            array.splice(index, 1);
+        }
+
+        function makeTheMarmalade(buttonBabyDoooor) {
+            if (buttonBabyDoooor.classList.contains("btn-success")) {
+                shuffle(players);
+                document.getElementById("blue-player-1").innerHTML = players[0].innerHTML;
+                document.getElementById("blue-player-2").innerHTML = players[1].innerHTML;
+                document.getElementById("yellow-player-1").innerHTML = players[2].innerHTML;
+                document.getElementById("yellow-player-2").innerHTML = players[3].innerHTML;
+            }
+
+        }
+
+        function shuffle(a) {
+            var j, x, i;
+            for (i = a.length - 1; i > 0; i--) {
+                j = Math.floor(Math.random() * (i + 1));
+                x = a[i];
+                a[i] = a[j];
+                a[j] = x;
+            }
+            return a;
+        }
+
+        function getUrlVars() {
+            var vars = {};
+            //console.log(window.location.href);
+            //console.log(decodeURI(window.location.href));
+            var parts = decodeURI(window.location.href).replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        function escapeStr(_str) {
+            return _str.replace(/([%'"])/g, encodeURI)
+        }
+
+        function unescapeStr(_str) {
+            return _str.replace(/(%(?:2[257]))/g, decodeURI)
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <h1 id="title" class="text-center">BB d'or</h1>
+        <h2 id="subtitle" class="text-center">C'est baby babou, c'est baby babou !!</h1>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="">Participants :</h3>
+                    <p id="participant-list">
+                        <button type="button" class="btn btn-secondary btn-md btn-block col-4 align-self-start" onclick="changeParticipantStatus(this)">Participant
+                            1</button>
+                        <button type="button" class="btn btn-secondary btn-md btn-block col-4 align-self-start" onclick="changeParticipantStatus(this)">Participant
+                            2</button>
+                        <button type="button" class="btn btn-secondary btn-md btn-block col-4 align-self-start" onclick="changeParticipantStatus(this)">Participant
+                            3</button>
+                        <button type="button" class="btn btn-secondary btn-md btn-block col-4 align-self-start" onclick="changeParticipantStatus(this)">Participant
+                            4</button>
+                        <button type="button" class="btn btn-secondary btn-md btn-block col-4 align-self-start" onclick="changeParticipantStatus(this)">Participant
+                            5</button>
+                        <button type="button" class="btn btn-secondary btn-md btn-block col-4 align-self-start" onclick="changeParticipantStatus(this)">Participant
+                            6</button>
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="">Equipes :</h3>
+                    <h5 class="">Bleu</h5>
+                    <div class="alert alert-primary" id="blue-players">
+                        <span>Attaque : </span><span id="blue-player-1"></span>
+                        <br>
+                        <span>Defense : </span><span id="blue-player-2"></span>
+                    </div>
+                    <h5 class="">Jaune</h5>
+                    <div class="alert alert-warning" id="yellow-players">
+                        <span>Attaque : </span><span id="yellow-player-1"></span>
+                        <br>
+                        <span>Defense : </span><span id="yellow-player-2"></span>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <p>
+                        <button id="submit-button" type="button" class="btn btn-secondary btn-md btn-block align-self-start"
+                            onclick="makeTheMarmalade(this)">Baby d'oooooooor !!!</button>
+                    </p>
+                </div>
+
+
+            </div>
+
+    </div>
+
+</body>
+
+</html>
