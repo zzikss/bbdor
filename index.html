@@ -157,7 +157,7 @@
 
         function injectStylesheetRules(rules) {
             if(getUrlVars()["style"]){
-                var style = JSON.parse(unescapeStr(getUrlVars()["style"]));
+                var style = unescape(getUrlVars()["style"]);
                 if(style){
                     var styleEl = document.createElement('style');
                     styleEl.innerHTML = style;
