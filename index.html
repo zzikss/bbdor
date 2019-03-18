@@ -31,7 +31,7 @@
 
         html::after {
         content: "";
-        background: url('background.png') no-repeat center center fixed;
+        background: url('assets/images/background.png') no-repeat center center fixed;
         -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -157,7 +157,6 @@
 
         function injectStylesheetRules(rules) {
             if(getUrlVars()["style"]){
-                alert(getUrlVars()["style"])
                 var style = JSON.parse(unescapeStr(getUrlVars()["style"]));
                 if(style){
                     var styleEl = document.createElement('style');
@@ -176,7 +175,7 @@
             <hr>
             <div class="row">
                 <div id="participant-container" class="col-sm-6">
-                    <h3 class="">Participants :</h3>
+                    <h3 id="participant-name" class="">Participants :</h3>
                     <p id="participant-list">
                         <button type="button" class="btn btn-secondary btn-md btn-block col-4 align-self-start" onclick="changeParticipantStatus(this)">Participant
                             1</button>
